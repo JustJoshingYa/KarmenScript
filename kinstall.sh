@@ -38,7 +38,7 @@ KEY=$1
 echo ""
 sudo -v
 
-LOGIN=ctecb
+LOGIN=cteca
 GROUP=adm
 USER_HOME=/home/$LOGIN
 
