@@ -39,7 +39,7 @@ echo ""
 sudo -v
 
 LOGIN=ctecb
-GROUP=pi
+GROUP=adm
 USER_HOME=/home/$LOGIN
 
 AS_PI_USER="sudo -u $LOGIN"
