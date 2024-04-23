@@ -38,8 +38,19 @@ KEY=$1
 echo ""
 sudo -v
 
-LOGIN=ctecc
-GROUP=adm
+echo What is the pi username? (use getent users to find out before running this script. Type exit to get out of this script)
+read LOGIN
+if [ LOGIN "exit"]
+then 
+exit 1
+fi
+echo What is the user group? (use getent group to find out before running this script. Type exit to get out of this script)
+read GROUP
+if [ GROUP "exit"]
+then 
+exit 1
+fi
+
 USER_HOME=/home/$LOGIN
 
 AS_PI_USER="sudo -u $LOGIN"
